@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        /* border-radius: px; */
+    }
+
+    body {
+        background: #0f0f0f;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+   
+
+    /* HEADER */
+    .header {
+        background: linear-gradient(180deg, #1d5cff, #2f7cff);
+        color: white;
+        padding: 16px;
+        text-align: center;
+
+    }
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top-bar i {
+        font-size: 18px;
+        ba
+    }
+    .balance {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 14px 0;
+    }
+
+    .balance span {
+        font-size: 16px;
+    }
+
+    .carte-wave img {
+        width: 300px;
+        background: #3d8cff;
+        padding: 6px;
+        border-radius: 40px;
+    }
+
+
+    .icones {
+        background: white;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        padding: 16px;
+        border
+    
+    }
+
+    .icone {
+        background: #eef2ff;
+        border-radius: 100%;
+        text-align: center;
+        padding: 12px 6px;
+        color: #1d3cff;
+
+    }
+
+    .icone i {
+        font-size: 25px;
+        margin-bottom: 6px;
+        border-radius: 20px;
+    }
+
+    .icone span {
+        font-size: 15px;
+        display: flow-root;
+        color: #0f0f0f;
+    }
+
+    /* TRANSACTIONS */
+    .transactions {
+        background: white;
+    }
+
+    .transaction {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .info h4 {
+        font-size: 13px;
+        color: #2a2a2a;
+    }
+
+    .info p {
+        font-size: 11px;
+        color: #888;
+        margin-top: 4px;
+    }
+
+    
+
+    hr {
+        border: solid black gray 20px;
+    }
+
+    .carte-wave {
+        display: block;
+        width: 100%;
+        border
+    }
+    
+</style>
+
+<body>
+
+    <div class="phone">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="numero">
+                <i class="fa-solid fa-gear"></i>
+                <span class="wallet-id">
+                    <i class="fa-solid fa-wallet"></i>3747
+                </span>
+            </div>
+
+            <div class="balance">
+                5000000 <span>FCFA</span>
+            </div>
+
+            <!-- carte qr-->
+            <div class=" carte-wave">
+                <img src="image.jpeg" alt="carte wave">
+
+            </div>
+        </header>
+
+        <!-- mes icones  -->
+        <section class="icones">
+
+            <div class="icone">
+                <a href="#"><i class="fa-solid fa-user" style="background-color: white;"></i></a>
+                <span>Transfert</span>
+
+            </div>
+
+            <div class="icone">
+                <a href="#"> <i class="fa-solid fa-store" style="background-color: yellow;"></i></a>
+                <span>Paiements</span>
+            </div>
+
+            <div class="icone">
+                <a href="#"> <i class="fa-solid fa-mobile-screen"></i></a>
+                <span>Crédit</span>
+            </div>
+
+            <div class="icone">
+                <a href="#"> <i class="fa-solid fa-building-columns"></i></a>
+                <span>Banque</span>
+            </div>
+
+            <div class="icone">
+                <a href="#"> <i class="fa-solid fa-credit-card"></i></a>
+                <span>Carte</span>
+            </div>
+
+            <div class="icone">
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
+                <span>Cadeaux</span>
+            </div>
+
+            <div class="icone">
+                <i class="fa-solid fa-lock"></i>
+                <span>Coffre</span>
+            </div>
+
+            <div class="icone">
+                <i class="fa-solid fa-bus"></i>
+                <span>Transport</span>
+            </div>
+            <hr>
+        </section>
+
+        <!-- TRANSACTIONS -->
+        <section class="transactions ">
+
+            <div class="transaction">
+                <div class="info">
+                    <h4> TA ODETTE 76 344 56 78</h4>
+                    <p>7 février 2026 · 12:32</p>
+                </div>
+                <span class="pr positive">1.000.000F</span>
+            </div>
+
+            <div class="transaction">
+                <div class="info">
+                    <h4>De Ousmane C 70 345 67 54</h4>
+                    <p>6 février 2026 · 19:12</p>
+                </div>
+                <span class="prix positive">243.000F</span>
+            </div>
+
+            <div class="transaction">
+                <div class="info">
+                    <h4>À Amina K T 77 432 28 56</h4>
+                    <p>6 février 2026 · 13:07</p>
+                </div>
+                <span class="prix negative">-400.000F</span>
+            </div>
+
+            <div class="transaction">
+                <div class="info">
+                    <h4>Paiements moussa pobar boutique</h4>
+                    <p>5 février 2026 · 21:52</p>
+                </div>
+                <span class=" prix negative">-12.550F</span>
+            </div>
+
+            <div class="transaction">
+                <div class="info">
+                    <h4>De CHEIKH MBACKE</h4>
+                    <p>5 février 2026 · 17:02</p>
+                </div>
+                <span class=" prix positive">1.376.000F</span>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
